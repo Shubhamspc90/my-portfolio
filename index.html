@@ -1,0 +1,558 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Shubham Chauhan — Software Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300&family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- ===== CURSOR ===== -->
+  <div class="cursor-dot" id="cursorDot"></div>
+  <div class="cursor-ring" id="cursorRing"></div>
+
+  <!-- ===== NAV ===== -->
+  <nav class="navbar" id="navbar">
+    <div class="nav-inner">
+      <a class="nav-logo" href="#hero">SC<span class="dot">.</span></a>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#certificates">Certs</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <a href="assets/Shubham_Chauhan_Resume.pdf" download class="btn-resume">
+        <span>Resume</span>
+        <i class="fa-solid fa-arrow-down"></i>
+      </a>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+    <div class="mobile-menu" id="mobileMenu">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Projects</a>
+      <a href="#certificates">Certs</a>
+      <a href="#education">Education</a>
+      <a href="#contact">Contact</a>
+      <a href="assets/Shubham_Chauhan_Resume.pdf" download class="mobile-resume">Download Resume</a>
+    </div>
+  </nav>
+
+  <!-- ===== HERO ===== -->
+  <section id="hero">
+    <div class="hero-bg">
+      <canvas id="particleCanvas"></canvas>
+      <div class="hero-grid"></div>
+    </div>
+    <div class="hero-content">
+      <div class="hero-profile reveal-up" data-delay="0">
+        <div class="profile-avatar">
+          <img src="assets/profile.jpg" alt="Shubham Chauhan" class="profile-img">
+          <div class="profile-initials">SC</div>
+          <div class="profile-ring"></div>
+        </div>
+        <div class="profile-status">
+          <span class="status-dot"></span>
+          Open to Work
+        </div>
+      </div>
+      <h1 class="hero-name reveal-up" data-delay="100">
+        Shubham<br><em>Chauhan</em>
+      </h1>
+      <p class="hero-role reveal-up" data-delay="200">
+        <span class="typed-text" id="typedText"></span><span class="cursor-blink">|</span>
+      </p>
+      <p class="hero-tagline reveal-up" data-delay="300">
+        MCA Student &amp; Full-Stack Developer crafting intelligent, user-centered software solutions.
+        Passionate about clean architecture and scalable systems.
+      </p>
+      <div class="hero-actions reveal-up" data-delay="400">
+        <a href="#projects" class="btn-primary">View My Work <i class="fa-solid fa-arrow-right"></i></a>
+        <a href="#contact" class="btn-ghost">Let's Connect</a>
+      </div>
+      <div class="hero-stats reveal-up" data-delay="500">
+        <div class="stat"><span class="stat-num" data-count="10">0</span><span class="stat-label">Projects</span></div>
+        <div class="stat-divider"></div>
+        <div class="stat"><span class="stat-num" data-count="5">0</span><span class="stat-label">Certificates</span></div>
+        <div class="stat-divider"></div>
+        <div class="stat"><span class="stat-num" data-count="8">0</span><span class="stat-label">CGPA (BCA)</span></div>
+      </div>
+    </div>
+    <div class="hero-scroll">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT ===== -->
+  <section id="about" class="section">
+    <div class="container">
+      <div class="section-label reveal-up">01 — About</div>
+      <div class="about-grid">
+        <div class="about-text reveal-up" data-delay="100">
+          <h2 class="section-heading">
+            Building things that<br><em>matter.</em>
+          </h2>
+          <p>I'm <strong>Shubham Chauhan</strong>, a Master of Computer Application student at Lovely Professional University, Punjab. My journey spans full-stack web development, desktop applications, AI-powered systems, and database design.</p>
+          <p>I believe in writing code that's not just functional — but elegant, maintainable, and built for scale. Whether it's a Java desktop app or a face recognition system, I bring the same level of precision and passion.</p>
+          <p>Currently deepening my expertise in modern frameworks and cloud technologies, with a goal to engineer products that reach millions.</p>
+          <div class="about-links">
+            <a href="https://www.linkedin.com/in/shubham-chauhan-37abb425a/" target="_blank" rel="noopener" class="social-pill">
+              <i class="fa-brands fa-linkedin"></i> LinkedIn
+            </a>
+            <a href="https://github.com/Shubhamspc90" target="_blank" rel="noopener" class="social-pill">
+              <i class="fa-brands fa-github"></i> GitHub
+            </a>
+            <a href="mailto:shubham.spc90@gmail.com" class="social-pill">
+              <i class="fa-solid fa-envelope"></i> Email
+            </a>
+          </div>
+        </div>
+        <div class="about-card-wrap reveal-up" data-delay="200">
+          <div class="about-card">
+            <div class="card-avatar">SC</div>
+            <div class="card-info">
+              <h3>Shubham Chauhan</h3>
+              <p>Software Developer</p>
+            </div>
+            <div class="card-details">
+              <div class="card-detail-row"><i class="fa-solid fa-location-dot"></i><span>Uttar Pradesh, India</span></div>
+              <div class="card-detail-row"><i class="fa-solid fa-graduation-cap"></i><span>MCA — LPU, Punjab</span></div>
+              <div class="card-detail-row"><i class="fa-solid fa-mobile-screen"></i><span>+91-7897754753</span></div>
+            </div>
+            <div class="card-tags">
+              <span>Java</span><span>Python</span><span>Full-Stack</span><span>SQL</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SKILLS ===== -->
+  <section id="skills" class="section section-alt">
+    <div class="container">
+      <div class="section-label reveal-up">02 — Skills</div>
+      <h2 class="section-heading reveal-up">Tech Stack &amp; <em>Expertise</em></h2>
+      <div class="skills-grid">
+
+        <div class="skill-card reveal-up" data-delay="0">
+          <div class="skill-icon"><i class="fa-solid fa-code"></i></div>
+          <h3>Languages</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">C</span>
+            <span class="skill-tag">C++</span>
+            <span class="skill-tag">Java</span>
+            <span class="skill-tag">Python</span>
+          </div>
+          <div class="skill-bar-group">
+            <div class="skill-bar-item"><span>Java</span><div class="skill-bar"><div class="skill-fill" data-width="85"></div></div></div>
+            <div class="skill-bar-item"><span>Python</span><div class="skill-bar"><div class="skill-fill" data-width="80"></div></div></div>
+            <div class="skill-bar-item"><span>C++</span><div class="skill-bar"><div class="skill-fill" data-width="75"></div></div></div>
+          </div>
+        </div>
+
+        <div class="skill-card reveal-up" data-delay="100">
+          <div class="skill-icon"><i class="fa-solid fa-globe"></i></div>
+          <h3>Web Technologies</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">HTML5</span>
+            <span class="skill-tag">CSS3</span>
+            <span class="skill-tag">JavaScript</span>
+            <span class="skill-tag">Bootstrap</span>
+          </div>
+          <div class="skill-bar-group">
+            <div class="skill-bar-item"><span>HTML/CSS</span><div class="skill-bar"><div class="skill-fill" data-width="90"></div></div></div>
+            <div class="skill-bar-item"><span>JavaScript</span><div class="skill-bar"><div class="skill-fill" data-width="78"></div></div></div>
+            <div class="skill-bar-item"><span>Bootstrap</span><div class="skill-bar"><div class="skill-fill" data-width="85"></div></div></div>
+          </div>
+        </div>
+
+        <div class="skill-card reveal-up" data-delay="200">
+          <div class="skill-icon"><i class="fa-solid fa-layer-group"></i></div>
+          <h3>Frameworks &amp; Tools</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">Java Swing</span>
+            <span class="skill-tag">Tkinter</span>
+            <span class="skill-tag">OpenCV</span>
+            <span class="skill-tag">React (Learning)</span>
+          </div>
+          <div class="skill-bar-group">
+            <div class="skill-bar-item"><span>Java Swing</span><div class="skill-bar"><div class="skill-fill" data-width="82"></div></div></div>
+            <div class="skill-bar-item"><span>Tkinter/OpenCV</span><div class="skill-bar"><div class="skill-fill" data-width="75"></div></div></div>
+            <div class="skill-bar-item"><span>React</span><div class="skill-bar"><div class="skill-fill" data-width="50"></div></div></div>
+          </div>
+        </div>
+
+        <div class="skill-card reveal-up" data-delay="300">
+          <div class="skill-icon"><i class="fa-solid fa-database"></i></div>
+          <h3>Database &amp; DevTools</h3>
+          <div class="skill-tags">
+            <span class="skill-tag">MySQL</span>
+            <span class="skill-tag">SQL</span>
+            <span class="skill-tag">Git</span>
+            <span class="skill-tag">GitHub</span>
+            <span class="skill-tag">IntelliJ</span>
+          </div>
+          <div class="skill-bar-group">
+            <div class="skill-bar-item"><span>MySQL/SQL</span><div class="skill-bar"><div class="skill-fill" data-width="88"></div></div></div>
+            <div class="skill-bar-item"><span>Git/GitHub</span><div class="skill-bar"><div class="skill-fill" data-width="80"></div></div></div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PROJECTS ===== -->
+  <section id="projects" class="section">
+    <div class="container">
+      <div class="section-label reveal-up">03 — Projects</div>
+      <h2 class="section-heading reveal-up">Featured <em>Work</em></h2>
+      <p class="section-sub reveal-up">A selection of projects that demonstrate my range and depth. More on <a href="https://github.com/Shubhamspc90" target="_blank">GitHub →</a></p>
+
+      <div class="projects-grid">
+
+        <div class="project-card featured reveal-up" data-delay="0">
+          <div class="project-number">01</div>
+          <div class="project-content">
+            <div class="project-meta">
+              <span class="project-period">Jul – Aug 2025</span>
+              <span class="project-type">Desktop App</span>
+            </div>
+            <h3>Employee Management System</h3>
+            <p>Full-featured desktop application built with Java Swing and MySQL. Implements complete CRUD operations, smart search &amp; filter functionality, and an intuitive JTable-based interface for managing employee records efficiently.</p>
+            <div class="project-tech">
+              <span>Java</span><span>Java Swing</span><span>MySQL</span><span>JDBC</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/Shubhamspc90/Employee-Management-System" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i> View Code</a>
+            </div>
+          </div>
+          <div class="project-visual">
+            <div class="pv-icon"><i class="fa-solid fa-users-gear"></i></div>
+          </div>
+        </div>
+
+        <div class="project-card featured reveal-up" data-delay="100">
+          <div class="project-number">02</div>
+          <div class="project-content">
+            <div class="project-meta">
+              <span class="project-period">Apr – Jul 2025</span>
+              <span class="project-type">AI / ML</span>
+            </div>
+            <h3>Face Recognition Attendance System</h3>
+            <p>AI-powered attendance solution using Python, OpenCV, and MySQL. Leverages the LBPH algorithm for real-time face detection and recognition, with automated database storage and Excel export capabilities.</p>
+            <div class="project-tech">
+              <span>Python</span><span>OpenCV</span><span>Tkinter</span><span>MySQL</span><span>LBPH</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/Shubhamspc90" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i> View Code</a>
+            </div>
+          </div>
+          <div class="project-visual">
+            <div class="pv-icon"><i class="fa-solid fa-face-smile"></i></div>
+          </div>
+        </div>
+
+        <div class="project-card reveal-up" data-delay="200">
+          <div class="project-number">03</div>
+          <div class="project-content">
+            <div class="project-meta">
+              <span class="project-period">Jan – Mar 2025</span>
+              <span class="project-type">Web</span>
+            </div>
+            <h3>E-Commerce Website</h3>
+            <p>Responsive shopping platform with dynamic product listings, cart functionality, and cross-browser compatibility. Built with vanilla web technologies for performance and accessibility.</p>
+            <div class="project-tech">
+              <span>HTML</span><span>CSS</span><span>JavaScript</span><span>Bootstrap</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/Shubhamspc90/E-commerce" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i> View Code</a>
+              <a href="https://github.com/Shubhamspc90/Trends" target="_blank" rel="noopener"><i class="fa-solid fa-star"></i> Trends (Live)</a>
+            </div>
+          </div>
+          <div class="project-visual">
+            <div class="pv-icon"><i class="fa-solid fa-cart-shopping"></i></div>
+          </div>
+        </div>
+
+        <div class="project-card reveal-up" data-delay="300">
+          <div class="project-number">04</div>
+          <div class="project-content">
+            <div class="project-meta">
+              <span class="project-period">Oct – Dec 2024</span>
+              <span class="project-type">Database</span>
+            </div>
+            <h3>Online Food Ordering System</h3>
+            <p>Database-driven food ordering platform with ER diagrams, relational schemas, stored procedures, and triggers. Emphasizes data normalization, integrity, and optimized SQL query performance.</p>
+            <div class="project-tech">
+              <span>MySQL</span><span>SQL</span><span>ER Design</span><span>Normalization</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/Shubhamspc90" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i> View Code</a>
+            </div>
+          </div>
+          <div class="project-visual">
+            <div class="pv-icon"><i class="fa-solid fa-bowl-food"></i></div>
+          </div>
+        </div>
+
+        <div class="project-card reveal-up" data-delay="400">
+          <div class="project-number">05</div>
+          <div class="project-content">
+            <div class="project-meta">
+              <span class="project-period">2025</span>
+              <span class="project-type">Web App</span>
+            </div>
+            <h3>Weather API App</h3>
+            <p>Live weather dashboard integrating a public weather API. Displays real-time weather data with a clean and interactive UI for any searched location worldwide.</p>
+            <div class="project-tech">
+              <span>JavaScript</span><span>REST API</span><span>HTML/CSS</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/Shubhamspc90/weather-API" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i> View Code</a>
+            </div>
+          </div>
+          <div class="project-visual">
+            <div class="pv-icon"><i class="fa-solid fa-cloud-sun"></i></div>
+          </div>
+        </div>
+
+        <div class="project-card reveal-up" data-delay="500">
+          <div class="project-number">06</div>
+          <div class="project-content">
+            <div class="project-meta">
+              <span class="project-period">2025</span>
+              <span class="project-type">Web App</span>
+            </div>
+            <h3>College Leave Management</h3>
+            <p>PHP-based college leave management portal allowing students to apply for leaves and administrators to approve or reject requests with a clean dashboard interface.</p>
+            <div class="project-tech">
+              <span>PHP</span><span>MySQL</span><span>HTML/CSS</span>
+            </div>
+            <div class="project-links">
+              <a href="https://github.com/Shubhamspc90/college_leave_management" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i> View Code</a>
+            </div>
+          </div>
+          <div class="project-visual">
+            <div class="pv-icon"><i class="fa-solid fa-calendar-check"></i></div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="github-cta reveal-up">
+        <p>More projects and experiments on GitHub</p>
+        <a href="https://github.com/Shubhamspc90" target="_blank" rel="noopener" class="btn-ghost">
+          <i class="fa-brands fa-github"></i> View All Repositories
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CERTIFICATES ===== -->
+  <section id="certificates" class="section section-alt">
+    <div class="container">
+      <div class="section-label reveal-up">04 — Certificates</div>
+      <h2 class="section-heading reveal-up">Credentials &amp; <em>Learning</em></h2>
+      <div class="certs-grid">
+
+        <div class="cert-card reveal-up" data-delay="0">
+          <div class="cert-icon"><i class="fa-solid fa-robot"></i></div>
+          <div class="cert-body">
+            <span class="cert-date">Jul 2025</span>
+            <h3>Python using AI Workshop — 30 Days</h3>
+            <p>AI For Techies</p>
+          </div>
+          <div class="cert-badge">Verified</div>
+        </div>
+
+        <div class="cert-card reveal-up" data-delay="100">
+          <div class="cert-icon"><i class="fa-solid fa-seedling"></i></div>
+          <div class="cert-body">
+            <span class="cert-date">Apr 2025</span>
+            <h3>Research Paper — AI-Based Weather Prediction for Climate-Resilient Agriculture</h3>
+            <p>EAMIEE Association</p>
+          </div>
+          <div class="cert-badge">Published</div>
+        </div>
+
+        <div class="cert-card reveal-up" data-delay="200">
+          <div class="cert-icon"><i class="fa-solid fa-c"></i></div>
+          <div class="cert-body">
+            <span class="cert-date">Nov 2024</span>
+            <h3>Object Oriented Programming using C++ — 150 Hours</h3>
+            <p>iamneo Platform</p>
+          </div>
+          <div class="cert-badge">Certified</div>
+        </div>
+
+        <div class="cert-card reveal-up" data-delay="300">
+          <div class="cert-icon"><i class="fa-solid fa-comments"></i></div>
+          <div class="cert-body">
+            <span class="cert-date">Jan 2024</span>
+            <h3>One Week Soft Skills Program</h3>
+            <p>Professional Development</p>
+          </div>
+          <div class="cert-badge">Completed</div>
+        </div>
+
+        <div class="cert-card reveal-up" data-delay="400">
+          <div class="cert-icon"><i class="fa-brands fa-java"></i></div>
+          <div class="cert-body">
+            <span class="cert-date">Jul 2022</span>
+            <h3>Java Training Program — 80 Hours</h3>
+            <p>SK Deft</p>
+          </div>
+          <div class="cert-badge">Certified</div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== EDUCATION ===== -->
+  <section id="education" class="section">
+    <div class="container">
+      <div class="section-label reveal-up">05 — Education</div>
+      <h2 class="section-heading reveal-up">Academic <em>Journey</em></h2>
+      <div class="timeline">
+
+        <div class="timeline-item reveal-up" data-delay="0">
+          <div class="timeline-marker active"></div>
+          <div class="timeline-content">
+            <div class="tl-meta">
+              <span class="tl-period">Aug 2025 — Present</span>
+              <span class="tl-badge current">Current</span>
+            </div>
+            <h3>Master of Computer Application (MCA)</h3>
+            <p class="tl-institution"><i class="fa-solid fa-building-columns"></i> Lovely Professional University, Punjab</p>
+            <p class="tl-score">CGPA: 7.36</p>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal-up" data-delay="100">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <div class="tl-meta">
+              <span class="tl-period">Apr 2021 — May 2024</span>
+            </div>
+            <h3>Bachelor of Computer Application (BCA)</h3>
+            <p class="tl-institution"><i class="fa-solid fa-building-columns"></i> Dr. Virendra Swarup Institute of Computer Studies, Kanpur</p>
+            <p class="tl-score">CGPA: <strong>8.0</strong></p>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal-up" data-delay="200">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <div class="tl-meta">
+              <span class="tl-period">Apr 2018 — Mar 2020</span>
+            </div>
+            <h3>Intermediate (Class XII)</h3>
+            <p class="tl-institution"><i class="fa-solid fa-school"></i> Shree Ram Convent School, Varanasi</p>
+            <p class="tl-score">Percentage: 63%</p>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal-up" data-delay="300">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <div class="tl-meta">
+              <span class="tl-period">Apr 2016 — Mar 2018</span>
+            </div>
+            <h3>High School (Class X)</h3>
+            <p class="tl-institution"><i class="fa-solid fa-school"></i> BPS Public School, Naubatpur, Chandauli, Varanasi</p>
+            <p class="tl-score">Percentage: 71%</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section id="contact" class="section section-alt">
+    <div class="container">
+      <div class="section-label reveal-up">06 — Contact</div>
+      <h2 class="section-heading reveal-up">Let's <em>Work Together</em></h2>
+      <p class="section-sub reveal-up">Open to internships, full-time roles, and exciting collaborations. Don't hesitate to reach out.</p>
+      <div class="contact-grid">
+        <div class="contact-info reveal-up" data-delay="0">
+          <div class="contact-item">
+            <div class="ci-icon"><i class="fa-solid fa-envelope"></i></div>
+            <div>
+              <span>Email</span>
+              <a href="mailto:shubham.spc90@gmail.com">shubham.spc90@gmail.com</a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="ci-icon"><i class="fa-solid fa-phone"></i></div>
+            <div>
+              <span>Phone</span>
+              <a href="tel:+917897754753">+91-7897754753</a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="ci-icon"><i class="fa-brands fa-linkedin"></i></div>
+            <div>
+              <span>LinkedIn</span>
+              <a href="https://www.linkedin.com/in/shubham-chauhan-37abb425a/" target="_blank" rel="noopener">linkedin.com/in/shubham-chauhan</a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="ci-icon"><i class="fa-brands fa-github"></i></div>
+            <div>
+              <span>GitHub</span>
+              <a href="https://github.com/Shubhamspc90" target="_blank" rel="noopener">github.com/Shubhamspc90</a>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="ci-icon"><i class="fa-solid fa-location-dot"></i></div>
+            <div>
+              <span>Location</span>
+              <p>Uttar Pradesh, India</p>
+            </div>
+          </div>
+          <a href="assets/Shubham_Chauhan_Resume.pdf" download class="btn-primary resume-download-btn">
+            <i class="fa-solid fa-file-arrow-down"></i> Download Resume
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer>
+    <div class="footer-inner">
+      <div class="footer-logo">SC<span class="dot">.</span></div>
+      <p>Designed &amp; Built by <strong>Shubham Chauhan</strong> · 2025</p>
+      <div class="footer-links">
+        <a href="https://github.com/Shubhamspc90" target="_blank" rel="noopener"><i class="fa-brands fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/shubham-chauhan-37abb425a/" target="_blank" rel="noopener"><i class="fa-brands fa-linkedin"></i></a>
+        <a href="mailto:shubham.spc90@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+      </div>
+      <p class="footer-quote">"If you believe, you can."</p>
+    </div>
+  </footer>
+
+  <!-- Back to top -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
