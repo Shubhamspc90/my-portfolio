@@ -81,12 +81,13 @@ document.querySelectorAll('.skill-card').forEach(c => skillObserver.observe(c));
 // ── Counter animation ────────────────────────────────────
 function animateCount(el, target, duration = 1500) {
   let start = 0;
+  const decimals = parseInt(el.dataset.decimals || 0, 10);
   const step = (timestamp) => {
     if (!start) start = timestamp;
     const progress = Math.min((timestamp - start) / duration, 1);
-    el.textContent = Math.floor(progress * target);
+    el.textContent = (progress * target).toFixed(decimals);
     if (progress < 1) requestAnimationFrame(step);
-    else el.textContent = target;
+    else el.textContent = Number(target).toFixed(decimals);
   };
   requestAnimationFrame(step);
 }
@@ -94,7 +95,7 @@ const statsObserver = new IntersectionObserver((entries) => {
   entries.forEach(entry => {
     if (entry.isIntersecting) {
       entry.target.querySelectorAll('.stat-num').forEach(el => {
-        animateCount(el, parseInt(el.dataset.count));
+        animateCount(el, Number(el.dataset.count));
       });
       statsObserver.unobserve(entry.target);
     }
@@ -105,11 +106,11 @@ if (heroStats) statsObserver.observe(heroStats);
 
 // ── Typing effect ────────────────────────────────────────
 const roles = [
-  'Full-Stack Developer',
-  'Java Application Developer',
-  'Python & AI Enthusiast',
-  'Database Engineer',
-  'MCA Student @ LPU'
+  'Aspiring AI/ML Engineer',
+  'Machine Learning Developer',
+  'Generative AI Developer',
+  'Python Developer',
+  'MCA Graduate'
 ];
 let rIdx = 0, cIdx = 0, deleting = false;
 const typedEl = document.getElementById('typedText');
