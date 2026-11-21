@@ -106,7 +106,7 @@ if (heroStats) statsObserver.observe(heroStats);
 
 // ── Typing effect ────────────────────────────────────────
 const roles = [
-  'Aspiring AI/ML Engineer',
+  'AI/ML Engineer',
   'Machine Learning Developer',
   'Generative AI Developer',
   'Python Developer',
